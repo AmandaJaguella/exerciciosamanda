@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercíco02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div class="Fundo">
+            <button onclick="AdicionarItem()" id="Botao">Adicionar Item</button>
+            
+
+            <button onclick="RemoverItem()" id="Botao">Remover Item</button>
+
+            <p><ul id="lista"><li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li></ul></p>
+            
+            
+
+
+
+        </div>
+    </div>
+
+    <script>
+        function AdicionarItem(){
+    const lista = document.getElementById('lista');
+
+    const novoItem = document.createElement('ul');
+
+    novoItem.textContent = `Item ${lista.children.length + 1}`;
+
+    lista.appendChild(novoItem);
+}
+
+function RemoverItem(){
+    const lista = document.getElementById('lista');
+
+    if (lista.children.length > 0) {
+    
+        lista.removeChild(lista.lastElementChild);
+    } else {
+        alert('Não há itens para remover!');
+    }
+}
+
+        
+    </script>
+
+       
+
+    
+</body>
+</html>

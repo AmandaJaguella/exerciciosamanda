@@ -1,0 +1,32 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.Fundo{background-color: rgb(194, 118, 25);
+    width: 100%;
+    height: 975px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+
+
+ul{
+    list-style: none;
+}
+
+
+button{
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+}

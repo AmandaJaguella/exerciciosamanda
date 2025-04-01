@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Fundo">
+
+        <div class="Central">
+            <button onclick="MudarTexto()" id="Botao">Alterar Frase</button>
+            <h1 id="Texto">Acredite em si mesmo e você será imparável</h1>
+
+        </div>
+
+    </div>
+    
+    <script>
+        function MudarTexto(){
+            var TextoElement = document.getElementById("Texto");
+
+
+            if (TextoElement.textContent === "Acredite em si mesmo e você será imparável"){
+                TextoElement.textContent = "Se você pode sonhar, pode realizar";
+
+            }
+
+            else{
+                TextoElement.textContent = "Acredite em si mesmo e você será imparável"
+                
+            }
+        }
+    </script>
+    
+</body>
+</html>

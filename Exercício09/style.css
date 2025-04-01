@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(234, 174, 101);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 100vh;
+
+
+}
+
+
+p{
+    font-size: 5.0em;
+}
+
+button{
+padding: 15px 30px;
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+        background-color: blueviolet;
+        color: white;
+        border-radius: 5px;
+    }
+
+

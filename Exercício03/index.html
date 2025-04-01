@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício03</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+    <div id="Fundo" style="color: brown;">
+        <button onclick="MudarCor()" id="botao">Clique para Mudar a Cor</button>
+
+</div>
+
+
+
+
+<script>
+    function MudarCor(){
+        let Fundo = document.getElementById("Fundo");
+        let CorAtual = Fundo.style.backgroundColor;
+
+        if(CorAtual === "brown" ){
+            Fundo.style.backgroundColor = "blue";
+
+        }else{
+            Fundo.style.backgroundColor = "brown";
+
+        }
+
+
+
+    }
+</script>
+
+    
+</body>
+</html>

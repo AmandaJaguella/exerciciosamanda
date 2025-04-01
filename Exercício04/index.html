@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício04</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="AumentarValor()" id="botao1">Aumentar Valor</button>
+    <h1 id="sequencia">0</h1>
+
+
+    <script>
+        function AumentarValor(){
+            let AumentarSequencia = document.getElementById("sequencia");
+            let NumeroAtual = parseInt(AumentarSequencia.innerText);
+            AumentarSequencia.innerText = NumeroAtual + 1;
+
+        }
+    </script>
+</body>
+</html>
